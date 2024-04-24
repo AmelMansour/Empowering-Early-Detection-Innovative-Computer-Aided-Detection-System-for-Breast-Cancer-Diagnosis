@@ -230,7 +230,6 @@ class Block8(nn.Module):
             out = self.relu(out)
         return out
 
-
 class InceptionResNetV2(nn.Module):
 
     def __init__(self, num_classes=1001):
