@@ -428,7 +428,6 @@ class InceptionAux(nn.Module):
         # N x 1000
         return x
 
-
 class BasicConv2d(nn.Module):
 
     def __init__(self, in_channels, out_channels, **kwargs):
