@@ -1,7 +1,12 @@
-image: gitpod/workspace-full:latest
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
-  - init: |
-      pip install -r requirements.txt
   - command: |
-      pip install pyswarm
+      echo "Welcome to your Gitpod workspace!"
+      pip install -r requirements.txt
+      # Ajoute d'autres commandes pour configurer ton environnement ici
+
+ports:
+  - port: 8888
+    onOpen: open-preview
