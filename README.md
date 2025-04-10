@@ -1,6 +1,4 @@
-Empowering-Early-Detection-Innovative-Computer-Aided-Detection-System-for-Breast-Cancer-Diagnosis
-
-# Contexte et Problématique
+# Empowering-Early-Detection-Innovative-Computer-Aided-Detection-System-for-Breast-Cancer-Diagnosis
 
 Le cancer du sein est l'une des principales causes de mortalité chez les femmes, avec 2,26 millions de nouveaux cas en 2022 (OMS). Bien que les méthodes de dépistage comme la mammographie aient progressé, elles souffrent de faux positifs/négatifs et d'une interprétation subjective. Ce mémoire propose un système de détection assistée par ordinateur (CAD) basé sur l'IA pour améliorer la précision du diagnostic via l'analyse automatisée d'images mammographiques.
 
