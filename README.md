@@ -11,31 +11,9 @@ This research presents a novel approach to breast cancer diagnosis using a compu
 * Utilize deep learning models, specifically Convolutional Neural Networks (CNN) and ResNet152, for image classification.
 
 * Optimize the model’s hyperparameters using various metaheuristic algorithms:
+Genetic Algorithms (GA), Particle Swarm Optimization (PSO), Simulated Annealing (SA), Tabu Search (TS) and Optuna framework
 
-- Genetic Algorithms (GA)
-
-- Particle Swarm Optimization (PSO)
-
-- Simulated Annealing (SA)
-
-- Tabu Search (TS)
-
-- Optuna framework
-
-* Evaluate the model’s performance using the following metrics:
-
-- Confusion Matrix
-
-- Accuracy
-
-- Precision
-
-- Recall
-
-- F1 Score
-
-- ROC Curve , AUC
-
+* Evaluate the model’s performance using the following metrics: Confusion Matrix, Accuracy, Precision, Recall, F1 Score, ROC Curve , AUC
 
 # Methodology:
 
