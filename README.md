@@ -49,8 +49,6 @@ Hyperparameters used:
 
 Algorithms used: Genetic Algorithm (GA), Simulated Annealing (SA), Tabu Search (TS), Particle Swarm Optimization (PSO), Optuna.
 
-*  Results of different optimization algorithms on DDSM and INbreast:
-
 ![image](https://github.com/user-attachments/assets/8fb30d07-686a-435a-9bfa-3919c42bbe43)
 
 
@@ -59,11 +57,15 @@ Algorithms used: Genetic Algorithm (GA), Simulated Annealing (SA), Tabu Search (
 ![image](https://github.com/user-attachments/assets/e830fbfa-3c25-41fe-9240-4d86245b6ee6)
 
 
-# Fine-tuning the ResNet152 model with Optuna:
+# ResNet152 model with Optuna:
 
-Results after fine-tuning:
+![image](https://github.com/user-attachments/assets/cc50cfd4-a0fe-4cd4-897a-240a50f2ed7e)
 
-![image](https://github.com/user-attachments/assets/e64511bd-0c3b-42e9-8875-f687c5cdd4ea)
+
+# ResNet152 fine-tuning on INbreast: 
+
+![image](https://github.com/user-attachments/assets/466c55ea-59e0-4e19-a944-60d6b917d65b)
+
 
 Improvement over baseline ResNet152:
 
