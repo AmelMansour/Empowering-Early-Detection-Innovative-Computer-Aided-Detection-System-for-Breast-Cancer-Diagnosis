@@ -2,76 +2,101 @@
 
 This research presents a novel approach to breast cancer diagnosis using a computer-aided detection (CAD) system that leverages mammographic images for early detection and enhanced diagnostic accuracy. The study highlights the transformative potential of artificial intelligence (AI), particularly deep learning techniques, in early cancer detection, offering a robust tool to improve patient outcomes. The developed system employs convolutional neural networks (CNNs) and incorporates a pre-trained ResNet152 model to extract and classify features from mammographic images, distinguishing between benign and malignant tumors. To further enhance the model’s performance, the CNN model’s hyperparameters are optimized using advanced metaheuristic algorithms, including genetic algorithms, particle swarm optimization, simulated annealing, and tabu search. A key aspect of this work is the utilization of the Optuna framework, an efficient hyperparameter optimization tool, which significantly contributed to achieving remarkable results, with an accuracy of 99.84%, precision of 99.86%, recall of 99.85%, and an F1 score of 99.85%. The experimentswere conducted on two publicly available datasets, namely the Digital Database for Screening Mammography (DDSM) and the INbreast dataset. These datasets provide a diverse set of mammographic images, making them suitable for the comprehensive evaluation of the developed CAD system. The optimization capabilities of Optuna played a crucial role in improving the model’s performance and convergence speed, making it a promising tool for clinical applications.
 
-# Objectifs
+# Objectives:
 
-* Développer un modèle CNN optimisé pour classer les tumeurs (bénignes/malignes).
+* Develop a computer-aided detection (CAD) system to differentiate between benign and malignant breast tumors.
 
-* Utiliser des algorithmes métaheuristiques (GA, PSO, SA, TS) et le framework Optuna pour optimiser les hyperparamètres.
+* Enhance the accuracy and efficiency of breast cancer diagnosis.
 
-* Évaluer les performances sur deux bases de données publiques : DDSM et INbreast.
+* Utilize deep learning models, specifically Convolutional Neural Networks (CNN) and ResNet152, for image classification.
 
-* Comparer les résultats avec l'état de l'art pour valider l'efficacité clinique.
+* Optimize the model’s hyperparameters using various metaheuristic algorithms:
 
-# Méthodologie
-1. Données
-   
-DDSM : 13,128 images (PNG, 50μm/pixel).
+- Genetic Algorithms (GA)
 
-INbreast : 7,632 images (DICOM, 70μm/pixel).
+- Particle Swarm Optimization (PSO)
 
-Prétraitement : Redimensionnement (256x256), CLAHE, Dénormalisation, Augmentation de données.
+- Simulated Annealing (SA)
 
-2. Modèles et Optimisation
-   
-CNN Personnalisé : Architecture avec couches convolutives, pooling, et dropout.
+- Tabu Search (TS)
 
-ResNet152 : Transfer Learning avec fine-tuning.
+- Optuna framework
 
-Optimisation :
+* Evaluate the model’s performance using the following metrics:
 
-Algorithmes métaheuristiques (GA, PSO, SA, TS).
+- Confusion Matrix
 
-Framework Optuna pour l'optimisation automatique.
+- Accuracy
 
-3. Évaluation
-   
-Métriques d'évaluation : Accuracy, Précision, Rappel, F1-Score, AUC-ROC, Matrice de confusion.
+- Precision
 
-Validation croisée stratifiée (5 folds).
+- Recall
 
-## Résultats
+- F1 Score
 
-# Résultats du CNN sans algorithmes d'optimisation
+- ROC Curve , AUC
+
+
+# Methodology:
+
+1. Data:
+
+DDSM: 13,128 images (PNG, 50μm/pixel).
+
+INbreast: 7,632 images (DICOM, 70μm/pixel).
+
+2. Preprocessing: Resizing (256x256), CLAHE, Denormalization, Data Augmentation.
+
+3. Models and Optimization:
+
+Custom CNN: Architecture with convolutional layers, pooling, and dropout.
+
+ResNet152: Transfer learning with fine-tuning.
+
+4. Optimization:
+
+Metaheuristic algorithms (GA, PSO, SA, TS).
+
+Optuna framework for automatic optimization.
+
+5. Evaluation:
+
+Evaluation metrics: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
+
+Stratified cross-validation (5 folds).
+
+# Results:
+
+* CNN without optimization algorithms:
 
 ![image](https://github.com/user-attachments/assets/13895387-feeb-47d3-9a14-6a57bbfe5d58)
 
-* Résultats de performance sur les ensembles DDSM et INbreast :
+* Performance on DDSM and INbreast datasets:
 
 ![image](https://github.com/user-attachments/assets/fc20b30d-9f63-480f-93e3-c3be83ab4917)
 
 
-# Résultats du CNN avec algorithmes d'optimisation des hyperparamètres
+# CNN with hyperparameter optimization algorithms:
 
-Algorithmes utilisés : Algorithme génétique (GA), Recuit simulé (SA), Recherche Tabou (TS), Optimisation par essaim de particules (PSO), Optuna
+Algorithms used: Genetic Algorithm (GA), Simulated Annealing (SA), Tabu Search (TS), Particle Swarm Optimization (PSO), Optuna.
 
-Résultats des différents algorithmes d'optimisation sur DDSM et INbreast :
+*  Results of different optimization algorithms on DDSM and INbreast:
 
 ![image](https://github.com/user-attachments/assets/8fb30d07-686a-435a-9bfa-3919c42bbe43)
 
 
-# Résultats du modèle ResNet152 sans optimisation des hyperparamètres
-
-Résultats de performance :
+# ResNet152 model without hyperparameter optimization:
 
 ![image](https://github.com/user-attachments/assets/e830fbfa-3c25-41fe-9240-4d86245b6ee6)
 
 
-# Fine-tuning du modèle ResNet152 avec Optuna
-Résultats après fine-tuning :
+# Fine-tuning the ResNet152 model with Optuna:
+
+Results after fine-tuning:
 
 ![image](https://github.com/user-attachments/assets/e64511bd-0c3b-42e9-8875-f687c5cdd4ea)
 
-Amélioration par rapport à ResNet152 de base :
+Improvement over baseline ResNet152:
 
 ![image](https://github.com/user-attachments/assets/122bba4c-a4e4-493f-a6d1-e9cb3bc2c13d)
 
