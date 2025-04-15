@@ -26,8 +26,7 @@ INbreast: 7,632 images (DICOM, 70μm/pixel).
 ![image](https://github.com/user-attachments/assets/96d7cd99-45d2-478d-8606-698e2fffee3d)
 
 # Results:
-
-* CNN without optimization algorithms:
+# CNN without optimization algorithms:
 
 Hyperparameters used:
 
