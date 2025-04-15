@@ -29,9 +29,18 @@ INbreast: 7,632 images (DICOM, 70μm/pixel).
 
 * CNN without optimization algorithms:
 
-![image](https://github.com/user-attachments/assets/13895387-feeb-47d3-9a14-6a57bbfe5d58)
+Hyperparameters used:
 
-* Performance on DDSM and INbreast datasets:
+* Learning Rate: 0.0001
+
+* Batch Size: 32
+
+* Number of Epochs: 10
+
+* Optimizer: Adam
+
+* Loss Function: Binary Crossentropy
+
 
 ![image](https://github.com/user-attachments/assets/fc20b30d-9f63-480f-93e3-c3be83ab4917)
 
