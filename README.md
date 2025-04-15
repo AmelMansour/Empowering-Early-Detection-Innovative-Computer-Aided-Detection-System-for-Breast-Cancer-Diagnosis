@@ -17,31 +17,13 @@ Genetic Algorithms (GA), Particle Swarm Optimization (PSO), Simulated Annealing 
 
 # Methodology:
 
-1. Data:
+Data:
 
 DDSM: 13,128 images (PNG, 50μm/pixel).
 
 INbreast: 7,632 images (DICOM, 70μm/pixel).
 
-2. Preprocessing: Resizing (256x256), CLAHE, Denormalization, Data Augmentation.
-
-3. Models and Optimization:
-
-Custom CNN: Architecture with convolutional layers, pooling, and dropout.
-
-ResNet152: Transfer learning with fine-tuning.
-
-4. Optimization:
-
-Metaheuristic algorithms (GA, PSO, SA, TS).
-
-Optuna framework for automatic optimization.
-
-5. Evaluation:
-
-Evaluation metrics: Accuracy, Precision, Recall, F1-Score, AUC-ROC, Confusion Matrix.
-
-Stratified cross-validation (5 folds).
+![image](https://github.com/user-attachments/assets/96d7cd99-45d2-478d-8606-698e2fffee3d)
 
 # Results:
 
